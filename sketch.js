@@ -26,7 +26,7 @@ class Line{
     this.loc = createVector(width/2, height/2);
     this.vel = createVector(0, 0);
     this.len = random(height*0.2);
-    this.ts = random(2,5);
+    this.ts = random(1,3);
     this.color = random(360);
   }
 
