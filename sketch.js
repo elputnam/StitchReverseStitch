@@ -26,13 +26,13 @@ class Line{
     this.loc = createVector(width/2, height/2);
     this.vel = createVector(0, 0);
     this.len = random(height*0.2);
-    this.ts = 5;
+    this.ts = random(2,5);
     this.color = random(360);
   }
 
   display(){
     strokeCap(PROJECT);
-    stroke(this.color, random(50, 100), random(100));
+    stroke(this.color, random(100), random(100));
     strokeWeight(random(10));
     line(this.loc.x, this.loc.y, 
       this.loc.x + this.len, this.loc.y + this.len);
