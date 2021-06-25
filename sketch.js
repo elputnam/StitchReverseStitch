@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 1);
+  background(random(20), 1);
   for (i = 0; i < weave.length; i++){
     weave[i].display();
     weave[i].update();
@@ -45,8 +45,8 @@ class Line{
     this.loc.add(this.vel);
 
     let angle = atan2(mouseY - height/2, mouseX - width/2); 
+    translate(width*.75, height*.75);
     rotate(angle);
-
     this.color += 1;
     
   }
